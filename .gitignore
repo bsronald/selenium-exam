@@ -4,3 +4,4 @@ out
 build
 C:\\log4j-application.log
 .\\log4j-application.log
+.gradle

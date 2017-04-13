@@ -51,9 +51,27 @@ tasks.withType(Pmd) {
     }
 }
 
+//test {
+//    exclude 'org/fundacionjala/pivotal/**'
+//    testLogging {
+//        events "PASSED", "STARTED", "FAILED", "SKIPPED"
+//    }
+//}
+
+
 test {
-    exclude 'org/fundacionjala/pivotal/**'
+
+    useTestNG()
+    options {
+        suites suites
+
+    }
     testLogging {
         events "PASSED", "STARTED", "FAILED", "SKIPPED"
     }
+
+    scanForTestClasses false
+    systemProperty 'browser', browser
+    systemProperty 'user', user
+    systemProperty 'password', password
 }
