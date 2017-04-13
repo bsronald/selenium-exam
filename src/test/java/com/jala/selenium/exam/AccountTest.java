@@ -5,6 +5,7 @@ import com.jala.selenium.exam.pages.Account.Account;
 import com.jala.selenium.exam.pages.Account.ManageAccount;
 import com.jala.selenium.exam.pages.Dashboard;
 import com.jala.selenium.exam.pages.SignInForm;
+import com.jala.selenium.exam.utils.Environment;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -19,11 +20,12 @@ public class AccountTest {
     private ManageAccount manageAccount;
     private Account account;
     private String accountId;
+    private Environment environment = Environment.getInstance();
 
     @BeforeTest
     public void setup() {
-        final String username = "ronaldbutron@gmail.com";
-        final String password = "#1girlonlyU";
+        final String username = environment.getPrimaryUser();
+        final String password = environment.getPrimaryPassword();
         dashboard = SignInForm.loginAs(username, password);
 
     }
