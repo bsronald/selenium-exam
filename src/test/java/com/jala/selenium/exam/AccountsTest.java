@@ -12,9 +12,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 /**
- * @author bsronald on 4/12/17.
+ * @author bsronald on 4/13/17.
  */
-public class AccountTest {
+public class AccountsTest {
 
     private Dashboard dashboard;
     private ManageAccount manageAccount;

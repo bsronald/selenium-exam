@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1" >
     <test name="Regression1">
         <classes>
-            <class name="com.jala.selenium.exam.AccountTest"/>
+            <class name="com.jala.selenium.exam.AccountsTest"/>
         </classes>
     </test>
 </suite>
