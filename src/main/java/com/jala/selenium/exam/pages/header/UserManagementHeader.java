@@ -15,10 +15,9 @@ public class UserManagementHeader extends AbstractBasePage {
 
 
     /**
-     * This method doing click on "Setting" button.
+     * This method doing click on a link.
      *
-     * @param name String  whit the setting name.
-     * @return SettingAccount page.
+     * @param name String  with the link name.
      */
     private void clickOnLink(final String name) {
         WebElement settingButton = driver.findElement(By.cssSelector("a[href='/" + name + "']"));
@@ -26,8 +25,9 @@ public class UserManagementHeader extends AbstractBasePage {
     }
 
     /**
+     * This method click on Account link
      *
-     * @return
+     * @return new Account Page
      */
     public Account clickOnAccount() {
         clickOnLink(ACCOUNT);

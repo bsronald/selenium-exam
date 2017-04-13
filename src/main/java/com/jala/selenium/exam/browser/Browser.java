@@ -5,7 +5,5 @@ package com.jala.selenium.exam.browser;
  */
 public enum Browser {
     CHROME,
-    FIREFOX,
-    BROWSERSTACK,
-    SAUCELABS;
+    FIREFOX
 }

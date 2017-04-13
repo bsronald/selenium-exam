@@ -22,7 +22,7 @@ public class Header extends AbstractBasePage {
 
 
     /**
-     *
+     * Click on Profile Drop Down Menu
      */
     public ProfileDropDownMenu clickOnProfileDropDownMenu() {
         CommonActions.clickElement(dropdownName);
@@ -32,8 +32,8 @@ public class Header extends AbstractBasePage {
 
 
     /**
-     *
-     * @return
+     * Navigate to accounts page
+     * @return accounts page
      */
     public Account navigateToAccounts() {
         ProfileDropDownMenu profileDropDownMenu = clickOnProfileDropDownMenu();

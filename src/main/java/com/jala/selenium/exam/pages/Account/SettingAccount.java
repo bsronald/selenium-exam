@@ -2,6 +2,7 @@ package com.jala.selenium.exam.pages.Account;
 
 
 import com.jala.selenium.exam.common.CommonActions;
+import com.jala.selenium.exam.common.UICommonMethods;
 import com.jala.selenium.exam.pages.AbstractBasePage;
 import com.jala.selenium.exam.pages.header.Header;
 import com.jala.selenium.exam.pages.header.UserManagementHeader;

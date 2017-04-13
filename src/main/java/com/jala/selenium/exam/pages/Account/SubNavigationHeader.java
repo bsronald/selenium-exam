@@ -11,20 +11,22 @@ import org.openqa.selenium.WebElement;
 public class SubNavigationHeader extends AbstractBasePage {
 
 
+    private static final String SETTINGS = "Settings";
+
     /**
-     *
+     * This method click on settings button
      */
     public SettingAccount clickOnSettings() {
-        clikOnSubNav("Settings");
+        clickOnSubNav(SETTINGS);
         return new SettingAccount();
 
     }
 
     /**
-     *
-     * @param name
+     * This method click on a button Sub navigation header
+     * @param name button name
      */
-    private void clikOnSubNav(String name) {
+    private void clickOnSubNav(String name) {
         WebElement button = driver.findElement(By.xpath("//a[@class='button' and contains(.,'" + name + "')]"));
         CommonActions.clickElement(button);
     }

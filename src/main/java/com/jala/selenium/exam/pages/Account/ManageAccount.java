@@ -21,7 +21,7 @@ public class ManageAccount extends AbstractBasePage {
     @FindBy(css = "h2.account_name span")
     private WebElement accountNameLabel;
 
-    final static Logger LOG = Logger.getLogger(EnvironmentChecker.class);
+    final static Logger LOG = Logger.getLogger(ManageAccount.class);
     private Header header;
     private UserManagementHeader managementHeader;
     private SubNavigationHeader subNavigation;
@@ -66,8 +66,9 @@ public class ManageAccount extends AbstractBasePage {
     }
 
     /**
+     * This method return the name of account created
      *
-     * @return
+     * @return account name
      */
     public String getAccountName() {
 
@@ -76,8 +77,8 @@ public class ManageAccount extends AbstractBasePage {
 
 
     /**
-     *
-     * @return
+     * This method obtains account id value
+     * @return account id
      */
     public String getAccountId() {
         waitPage();

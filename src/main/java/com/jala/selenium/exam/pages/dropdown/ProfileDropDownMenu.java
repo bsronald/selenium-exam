@@ -5,7 +5,6 @@ import com.jala.selenium.exam.pages.AbstractBasePage;
 import com.jala.selenium.exam.pages.Account.Account;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
  * @author bsronald on 4/12/17.

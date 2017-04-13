@@ -141,9 +141,10 @@ public class Account extends AbstractBasePage {
 
 
     /**
+     * This method verify if the account created was displayed
      *
-     * @param accountNameExpected
-     * @return
+     * @param accountNameExpected name of the account
+     * @return true if was displayed, otherwise false
      */
     public boolean isAccountCreatedDisplayed(String accountNameExpected) {
         By accountName = By.xpath("//div[@class='name' and contains(., '" + accountNameExpected + "')]");
@@ -151,8 +152,8 @@ public class Account extends AbstractBasePage {
     }
 
     /**
-     *
-     * @param accountId
+     * This method navigate to Manage Account for an account
+     * @param accountId account id
      */
     public ManageAccount navigateToManageAccount(String accountId) {
         WebElement accountManageButton = driver.findElement(By.id("manage_account_link_" + accountId  + ""));
@@ -161,13 +162,13 @@ public class Account extends AbstractBasePage {
     }
 
     /**
-     *
+     * Delete an account
      * @param accountId
      */
     public void deleteAccount(String accountId) {
         ManageAccount manageAccount = navigateToManageAccount(accountId);
         SettingAccount settingAccount = manageAccount.getSubNavigation().clickOnSettings();
         settingAccount.clickDeleteAccountLink();
-
+        UICommonMethods.waitElementIsPresent(3, By.id("new_account_link"));
     }
 }
