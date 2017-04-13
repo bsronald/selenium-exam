@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class Chrome implements Driver {
 
-    private static final String WEB_DRIVER_PATH_WINDOWS = "src/main/resources/drivers/chromedriver2.25.exe";
+    private static final String WEB_DRIVER_PATH_WINDOWS = "src/main/resources/drivers/chromedriver.exe";
     private static final String  WEB_DRIVER_PATH_LINUX = "src/main/resources/drivers/chromeDriver";
     private static final String WEB_DRIVER_KEY = "webdriver.chrome.driver";
     final static Logger LOG = Logger.getLogger(EnvironmentChecker.class);
