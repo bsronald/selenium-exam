@@ -51,14 +51,6 @@ tasks.withType(Pmd) {
     }
 }
 
-//test {
-//    exclude 'org/fundacionjala/pivotal/**'
-//    testLogging {
-//        events "PASSED", "STARTED", "FAILED", "SKIPPED"
-//    }
-//}
-
-
 test {
 
     useTestNG()
